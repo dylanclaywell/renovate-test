@@ -7,7 +7,6 @@
   "onboardingBranch": "renovate/configure",
   "platform": "github",
   "includeForks": true,
-  "dryRun": "full",
   "repositories": ["dylanclaywell/renovate-test"],
   "dependencyDashboard": true,
   "packageRules": [
