@@ -1,8 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "branchPrefix": "renovate/",
+  "username": "renovate-release",
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
+  "onboarding": true,
+  "onboardingBranch": "renovate/configure",
+  "platform": "github",
   "includeForks": true,
+  "repositories": ["dylanclaywell/renovate-test"],
   "dependencyDashboard": true,
   "packageRules": [
     {
