@@ -1,3 +1,9 @@
+/**
+ * It is recommended to not name it one of the repository configuration filenames listed in the Renovate Docs for Configuration Options.
+ * 
+ * https://github.com/renovatebot/github-action?tab=readme-ov-file#configurationfile
+ */
+
 module.exports = {
   branchPrefix: "renovate/",
   // This username MUST match the username of the bot account that the PAT was created for
@@ -6,7 +12,6 @@ module.exports = {
   onboarding: true,
   onboardingBranch: "renovate/configure",
   platform: "github",
-  includeForks: true,
   repositories: ["dylanclaywell/renovate-test"],
   dependencyDashboard: true,
   packageRules: [
