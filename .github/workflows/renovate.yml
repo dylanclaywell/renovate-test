@@ -16,6 +16,7 @@ jobs:
         uses: renovatebot/github-action@v40.1.11
         with:
           configurationFile: '.github/renovate.json'
+          # Make sure the username in the config file is the one of the account this PAT belongs to
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
           LOG_LEVEL: 'debug'
