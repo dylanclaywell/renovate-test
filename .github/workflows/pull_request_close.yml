@@ -1,0 +1,12 @@
+name: Pull Request Close
+on:
+  pull_request:
+    branches:
+        - main
+
+jobs:
+  pull-request-close:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: echo "Pull Request Closed"
