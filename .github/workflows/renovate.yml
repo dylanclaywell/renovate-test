@@ -20,3 +20,4 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
           LOG_LEVEL: 'debug'
+          GITHUB_COM_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
