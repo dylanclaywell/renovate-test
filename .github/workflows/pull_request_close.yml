@@ -1,6 +1,6 @@
 name: Pull Request Close
 on:
-  pull_request:
+  pull_request_target:
     branches:
         - main
     types:
@@ -10,5 +10,12 @@ jobs:
   pull-request-close:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug
-        run: echo "Pull Request Closed"
+      - name: Output context
+        run: |
+            echo "The event name is ${{ github.event_name }} and the action is ${{ github.event.action }}" 
+            echo "The pull request number is ${{ github.event.pull_request.number }}"
+            echo "The pull request title is ${{ github.event.pull_request.title }}"
+            echo "The pull request body is ${{ github.event.pull_request.body }}"
+            echo "The pull request state is ${{ github.event.pull_request.state }}"
+            echo "The pull request merged is ${{ github.event.pull_request.merged }}"
+            echo "The pull request merged by is ${{ github.event.pull_request.merged_by }}"
