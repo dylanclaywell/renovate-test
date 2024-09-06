@@ -5,11 +5,6 @@ on:
       - main
     types:
         - closed
-  pull_request_target:
-    branches:
-      - main
-    types:
-        - closed
 
 jobs:
   pull-request-close:
