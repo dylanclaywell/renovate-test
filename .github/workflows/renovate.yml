@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
 
       - name: Self-hosted Renovate
-        uses: renovatebot/github-action@v40.2.8
+        uses: renovatebot/github-action@v40.2.7
         with:
           configurationFile: '.github/renovate-config.js'
           # Make sure the username in the config file is the one of the account this PAT belongs to
