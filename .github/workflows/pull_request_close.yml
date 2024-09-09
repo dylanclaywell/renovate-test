@@ -27,8 +27,5 @@ jobs:
         run: |
             echo "The ref is ${{ github.event.ref }}"
             echo "The ref_type is ${{ github.event.ref_type }}"
-            echo "The ref is deleted ${{ github.event.deleted }}"
-            echo "The ref is created ${{ github.event.created }}"
-            echo "The ref is updated ${{ github.event.updated }}"
             echo "The ref is ref_type ${{ github.event.ref_type }}"
-            echo "The pull request is ${{ github.event.pull_request }}""
+            echo "The pull request is ${{ github.event.pull_request }}"
