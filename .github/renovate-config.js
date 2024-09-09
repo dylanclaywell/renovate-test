@@ -51,4 +51,11 @@ module.exports = {
       enabled: false,
     },
   ],
+  hostRules: [
+    {
+      matchHostnames: ["github.com"],
+      token: process.env.RENOVATE_TOKEN,
+      hostType: "github",
+    }
+  ]
 }
