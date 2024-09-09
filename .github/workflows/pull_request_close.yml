@@ -23,7 +23,7 @@ jobs:
             echo "The pull request merged by is ${{ github.event.pull_request.merged_by }}"
 
       - name: Output branch deletion context
-        if: github.event.ref_type == 'delete'
+        if: github.event.ref_type == 'branch'
         run: |
             echo "The ref is ${{ github.event.ref }}"
             echo "The ref_type is ${{ github.event.ref_type }}"
