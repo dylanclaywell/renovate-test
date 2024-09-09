@@ -8,6 +8,9 @@ on:
   #   - cron: '0/15 * * * *'
 jobs:
   renovate:
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
